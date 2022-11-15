@@ -27,7 +27,7 @@ public class WebDriverBasics {
 
 		// automation Steps:
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium java\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Selenium java\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		
