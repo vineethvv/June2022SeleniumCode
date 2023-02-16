@@ -41,30 +41,38 @@ public class WebTablePagination {
 			
         }
 		
-		/*
-		 * //Single selection while(true) {
-		 * 
-		 * if(driver.findElements(By.xpath("//td[text()='Denmark']")).size()>0) {
-		 * selectCountry("Denmark"); break;
-		 * 
-		 * } else { // Pagination logic
-		 * 
-		 * System.out.println("Country not found....Clicking on next"); WebElement next
-		 * = driver.findElement(By.linkText("Next"));
-		 * 
-		 * if(next.getAttribute("class").contains("disabled")) {
-		 * 
-		 * System.out.println("Pagination is over ...Country still not found...");
-		 * break; }
-		 * 
-		 * next.click();
-		 * 
-		 * 
-		 * }
-		 * 
-		 * 
-		 * }
-		 */
+		
+		
+		  //Single selection
+		  
+		  while(true) {
+		  
+		  if(driver.findElements(By.xpath("//td[text()='Denmark']")).size()>0) {
+		  selectCountry("Denmark"); break;
+		  
+		  } 
+		  
+		  else { // Pagination logic
+		  
+		  System.out.println("Country not found....Clicking on next"); WebElement next
+		  = driver.findElement(By.linkText("Next"));
+		  
+		  if(next.getAttribute("class").contains("disabled")) {
+		  
+		  System.out.println("Pagination is over ...Country still not found...");
+		  break;
+		  
+		  }
+		  
+		  next.click();
+		  
+		  
+	 }
+		  
+		  
+		  }
+		 
+		 
 
 	}
 

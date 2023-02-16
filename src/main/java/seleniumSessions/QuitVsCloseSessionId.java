@@ -3,12 +3,16 @@ package seleniumSessions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class QuitVsCloseSessionId {
 
 	public static void main(String[] args) {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium java\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Selenium java\\chromedriver.exe");
+		
+		WebDriverManager.chromedriver().setup();
 
 		WebDriver driver = new ChromeDriver();// launch chrome browser//123
 		driver.get("https://www.google.com");// enter url//123
